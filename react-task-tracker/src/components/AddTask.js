@@ -9,7 +9,7 @@ const AddTask = ( {onAdd} ) => {
     e.preventDefault()
 
     if(!text) {
-      alert('Please add a task')
+      alert('Please add an assignment')
       return
     }
 
@@ -23,8 +23,8 @@ const AddTask = ( {onAdd} ) => {
   return (
     <form className='add-form' onSubmit={onSubmit}>
       <div className='form-control'>
-        <label>Task</label>
-        <input type='text' placeholder='Add Task'
+        <label>Assignment</label>
+        <input type='text' placeholder='Add Assignment'
         value={text} onChange={(e) => setText(e.target.value)}
         />
       </div>
@@ -45,7 +45,7 @@ const AddTask = ( {onAdd} ) => {
         />
       </div>
 
-      <input type='submit' value='Save Task' 
+      <input type='submit' value='Save Assignment' 
       className='btn btn-blick'/>
     </form>
   )
